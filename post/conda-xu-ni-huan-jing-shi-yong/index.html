@@ -1,0 +1,244 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Conda虚拟环境使用 | 吃什么</title>
+<link rel="shortcut icon" href="https://azzjy.github.io/favicon.ico?v=1721525685746">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://azzjy.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Conda虚拟环境使用 | 吃什么 - Atom Feed" href="https://azzjy.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+    <meta name="description" content="创建虚拟环境
+conda create --name my_first_env python=3.6
+
+
+其中my_first_env是自定义的虚拟运行环境名称
+python3.6指定虚拟运行环境的python版本
+当页面中停在Procee..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://azzjy.github.io">
+  <img class="avatar" src="https://azzjy.github.io/images/avatar.png?v=1721525685746" alt="">
+  </a>
+  <h1 class="site-title">
+    吃什么
+  </h1>
+  <p class="site-description">
+    就这样
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/azzjy" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              Conda虚拟环境使用
+            </h2>
+            <div class="post-info">
+              <span>
+                2024-06-09
+              </span>
+              <span>
+                2 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <h2 id="创建虚拟环境">创建虚拟环境</h2>
+<pre><code>conda create --name my_first_env python=3.6
+</code></pre>
+<ul>
+<li>其中my_first_env是自定义的虚拟运行环境名称</li>
+<li>python3.6指定虚拟运行环境的python版本</li>
+<li>当页面中停在Proceed([y]/n)? 输入y，按enter回车继续</li>
+</ul>
+<h2 id="切换进入虚拟环境">切换进入虚拟环境</h2>
+<h4 id="列出已有的虚拟环境">列出已有的虚拟环境</h4>
+<pre><code>conda env list
+</code></pre>
+<h4 id="进入虚拟环境">进入虚拟环境</h4>
+<pre><code>conda activate my_first_env 
+</code></pre>
+<h4 id="退出虚拟环境">退出虚拟环境</h4>
+<pre><code>conda deactivate
+</code></pre>
+<h2 id="安装python模块">安装Python模块</h2>
+<h3 id="1-pip-install">1. pip install</h3>
+<pre><code>pip install numpy or pip install numpy==1.16.5
+</code></pre>
+<h4 id="检查pip安装模块">检查pip安装模块</h4>
+<pre><code>pip list
+</code></pre>
+<h4 id="卸载模块">卸载模块</h4>
+<pre><code>pip uninstall numpy 无需指定版本
+</code></pre>
+<ul>
+<li>安装模块时，会自动安装或更新所需要的依赖模块，以匹配当前安装模块的版本</li>
+<li>pip卸载模块时，只会卸载当前指定的模块</li>
+</ul>
+<h3 id="conda-install">conda install</h3>
+<h4 id="安装">安装</h4>
+<pre><code>conda install numpy
+</code></pre>
+<h4 id="卸载">卸载</h4>
+<pre><code>conda uninstall numpy==1.16.5
+</code></pre>
+<ul>
+<li>安装的模块，所需的依赖模块，不仅仅是python模块，建议使用conda</li>
+<li>conda卸载模块时，会将当前模块，以及以当前模块为依赖的所有模块统统卸载</li>
+</ul>
+<h2 id="移除虚拟环境">移除虚拟环境</h2>
+<pre><code>conda remove -n 环境名 --all
+</code></pre>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83">创建虚拟环境</a></li>
+<li><a href="#%E5%88%87%E6%8D%A2%E8%BF%9B%E5%85%A5%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83">切换进入虚拟环境</a><br>
+*
+<ul>
+<li><a href="#%E5%88%97%E5%87%BA%E5%B7%B2%E6%9C%89%E7%9A%84%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83">列出已有的虚拟环境</a></li>
+<li><a href="#%E8%BF%9B%E5%85%A5%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83">进入虚拟环境</a></li>
+<li><a href="#%E9%80%80%E5%87%BA%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83">退出虚拟环境</a></li>
+</ul>
+</li>
+<li><a href="#%E5%AE%89%E8%A3%85python%E6%A8%A1%E5%9D%97">安装Python模块</a>
+<ul>
+<li><a href="#1-pip-install">1. pip install</a>
+<ul>
+<li><a href="#%E6%A3%80%E6%9F%A5pip%E5%AE%89%E8%A3%85%E6%A8%A1%E5%9D%97">检查pip安装模块</a></li>
+<li><a href="#%E5%8D%B8%E8%BD%BD%E6%A8%A1%E5%9D%97">卸载模块</a></li>
+</ul>
+</li>
+<li><a href="#conda-install">conda install</a>
+<ul>
+<li><a href="#%E5%AE%89%E8%A3%85">安装</a></li>
+<li><a href="#%E5%8D%B8%E8%BD%BD">卸载</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E7%A7%BB%E9%99%A4%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83">移除虚拟环境</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://azzjy.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
